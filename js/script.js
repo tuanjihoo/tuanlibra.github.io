@@ -7,6 +7,12 @@ $(document).ready(function() {
 	$('.btn-signup').on('click', function() {
 		window.location.href = '/signup.html';
 	})
+
+	var nice = $("html").niceScroll({
+        cursorcolor:"#7BC151",
+        cursorborder: "none",
+        cursorborderradius: "0px"
+    });
 });
 
 function init() {
