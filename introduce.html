@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>For Do While</title>
+    <title>For Do While: Introduce</title>
     <link href="img/logo.png" type="image/x-icon" rel="shortcut icon">
 
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
                         <li><a href="learn.html">Học</a></li>
                         <li><a href="javascript:void(0)">Thử thách</a></li>
                         <li><a href="javascript:void(0)">Hỏi đáp</a></li>
-                        <li><a href="introduce.html">Giới thiệu</a></li>
+                        <li class="active"><a href="introduce.html">Giới thiệu</a></li>
                     </ul>
                     <ul class="nav navbar-nav  navbar-right hidden-xs">
                         <li><a href="signin.html" class="btn btn-sign-in"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
@@ -50,37 +50,34 @@
 
     <!-- Content -->
     <div id="content">
-        <div class="content-signin">
-        	<div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 col-xs-12">
-                        <div class="panel panel-default form-signin">
-                            <div class="panel-heading  text-center">Đăng nhập</div>
-                            <div class="panel-body">
-                                <form action="" name="" method="">
-                                    <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" placeholder="Mật khẩu" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-block btn-signin"><i class="fa fa-sign-in"></i> Đăng nhập</button>
-                                    </div>
-                                    <div class="form-group">
-                                        <label><input type="checkbox" name="checkbox"> Ghi nhớ</label>
-                                        <a href="javascript:void(0)" class="pull-right">Quên mật khẩu?</a>
-                                    </div>
-                                </form>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-block btn-facebook"><i class="fa fa-facebook-square"></i> Đăng nhập qua Facebook</button>
-                                </div>
-                                <div class="form-group none-margin">
-                                    <button type="button" class="btn btn-block btn-signup"><i class="fa fa-user-plus"></i> Tạo tài khoản</button>
-                                </div>
-                            </div>
-                        </div>
+    	<div class="container">
+            <div class="row blog-content">
+                <!-- introduce item -->
+                <div class="col-xs-12 introduce-item">
+                    <div class="item-text">
+                        <h3>Vestibulum non ligula lorem. Duis convallis eget libero sed pretium. </h3>
+                        <p>Nam facilisis lorem vitae libero faucibus posuere. Fusce rutrum nisl diam. Nullam dui orci, dapibus id vestibulum a, tempus in leo. Sed urna metus, pretium quis tellus non, consectetur euismod nibh. Curabitur elementum magna vel augue pellentesque hendrerit. Nam ex arcu, consectetur quis tellus eget, viverra tempus ante. In a ante ac nisi sollicitudin condimentum. Aliquam ut convallis turpis, venenatis tincidunt odio. Phasellus nisl lectus, congue eu ante quis, volutpat tempus tellus. Ut auctor ornare tempor. </p>
+                        <div class="auth text-right">Thầy Nguyễn Quang Huy</div>
                     </div>
+                    <span class="item-thumbnail" style="background-image: url('img/introduce-1.jpg')"></span>
+                </div>
+                <!-- introduce item -->
+                <div class="col-xs-12 introduce-item">
+                    <div class="item-text">
+                        <h3>Donec volutpat ligula nec est consequat hendrerit.</h3>
+                        <p>Aenean nec turpis volutpat, molestie odio eu, ultrices lorem. In tempus porttitor urna nec lacinia. Pellentesque aliquet non nulla sed commodo. Proin id enim ac eros rhoncus venenatis a id lorem. Cras vestibulum ipsum ut urna congue, at bibendum mauris tempus. Maecenas interdum dolor nisi, sit amet malesuada odio dictum vel. Ut sagittis, mauris vel aliquet molestie, nulla ipsum iaculis sapien, eget aliquet diam quam et orci. Phasellus ac cursus tellus, a finibus massa.  </p>
+                        <div class="auth text-right">Thầy kenvin Nguyễn</div>
+                    </div>
+                    <span class="item-thumbnail" style="background-image: url('img/introduce-2.jpg')"></span>
+                </div>
+                <!-- introduce item -->
+                <div class="col-xs-12 introduce-item">
+                    <div class="item-text">
+                        <h3>In sed bibendum tellus. Phasellus dapibus malesuada velit nec rutrum</h3>
+                        <p>Aenean nec sem lacus. Morbi fringilla, tortor vitae venenatis facilisis, augue arcu sollicitudin felis, eget scelerisque tellus ante sed velit. Fusce faucibus mattis magna ac aliquam. Nunc augue mi, rutrum non ipsum convallis, consectetur mollis quam. Pellentesque pharetra vehicula augue, a convallis neque imperdiet sed. Aenean purus tortor, rhoncus ut eros porttitor, molestie ullamcorper eros. Praesent at dolor sit amet justo mollis tristique. </p>
+                        <div class="auth text-right">Thầy Adam</div>
+                    </div>
+                    <span class="item-thumbnail" style="background-image: url('img/introduce-3.jpg')"></span>
                 </div>
             </div>
         </div>
@@ -94,9 +91,9 @@
     			<div class="col-sm-6 footer-menu pull-right">
     				<ul>
     					<li><a href="blog.html">Blog</a></li>
-                        <li><a href="javascript:void(0)">Cố vấn</a></li>
-                        <li><a href="javascript:void(0)">Liên hệ</a></li>
-                        <li>
+    					<li><a href="javascript:void(0)">Cố vấn</a></li>
+    					<li><a href="javascript:void(0)">Liên hệ</a></li>
+    					<li>
                             <a href="javascript:void(0)"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                             <a href="javascript:void(0)"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                             <a href="javascript:void(0)"><img src="img/United-Kingdom.png"></a>
