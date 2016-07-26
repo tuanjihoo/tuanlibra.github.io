@@ -597,6 +597,7 @@ Style blog
 .learn-content .learn-title {
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 .learn-content .learn-title h2 {
   display: inline-block;
@@ -623,6 +624,27 @@ Style blog
   color: #17c18e;
   text-transform: uppercase;
 }
+.learn-content .learn-title .box-title-right {
+  display: inline-block;
+  right: 0px;
+  position: absolute;
+  top: 15px;
+}
+.learn-content .learn-title .box-title-right p {
+  color: #17c18e;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+.learn-content .learn-title .box-title-right p.point {
+  font-weight: 500;
+  color: #000;
+}
+.learn-content .challenge-title h2 {
+  margin-bottom: 30px;
+}
+.learn-content .challenge-title p {
+  padding: 0px 150px;
+}
 .learn-content .learn-detail-item {
   background-color: #fff;
   padding: 15px;
@@ -635,6 +657,20 @@ Style blog
   font-weight: 600;
   color: #17c18e;
   font-size: 18px;
+}
+.learn-content .learn-detail-item .item-challenge {
+  list-style-image: url(../img/ul-style.png);
+  padding-left: 38px;
+  margin-top: 10px;
+}
+.learn-content .learn-detail-item .item-challenge li {
+  width: 50%;
+  margin-bottom: 10px;
+  float: left;
+  padding-right: 40px;
+}
+.learn-content .learn-detail-item .item-challenge li:nth-child(2n) {
+  padding-right: 0px;
 }
 /*End learn detail*/
 @media screen and (max-width: 1199px) {
@@ -656,6 +692,18 @@ Style blog
   }
   .learn-item li:nth-child(5) {
     margin: 0px 0px 50px 0px;
+  }
+  .learn-content .learn-title .box-title-right {
+    position: static;
+    display: block;
+    text-align: center !important;
+  }
+  .learn-content .learn-title .box-title-right p {
+    display: inline-block;
+    margin: 0px 15px 10px;
+  }
+  .learn-content .challenge-title p {
+    padding: 0px 30px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -757,6 +805,25 @@ Style blog
     float: none;
     margin-left: 0px;
     margin: 0px 15px;
+  }
+  .learn-content .learn-title .box-title-right {
+    position: static;
+    display: block;
+    text-align: center !important;
+  }
+  .learn-content .learn-title .box-title-right p {
+    display: block;
+    margin: 0px 0px 0px;
+  }
+  .learn-content .learn-title .box-title-right p:last-child {
+    margin: 0px 0px 10px;
+  }
+  .learn-content .challenge-title p {
+    padding: 0px 0px;
+  }
+  .learn-content .learn-detail-item .item-challenge li {
+    width: 100%;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width: 480px) {

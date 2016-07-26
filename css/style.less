@@ -730,6 +730,7 @@ Style blog
     .learn-title {
         margin-top: 20px;
         margin-bottom: 20px;
+        position: relative;
         h2 {
             display: inline-block;
             line-height: 40px;
@@ -755,6 +756,30 @@ Style blog
                 text-transform: uppercase;
             }
         }
+        .box-title-right {
+            display: inline-block;
+            right: 0px;
+            position: absolute;
+            top: 15px;
+            p {
+                color: #17c18e;
+                padding: 0px 0px;
+                margin-bottom: 0px;
+            }
+            p.point {
+                font-weight: 500;
+                color: #000;
+            }
+        }
+    }
+
+    .challenge-title {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            padding: 0px 150px;
+        }
     }
 
     .learn-detail-item {
@@ -767,6 +792,21 @@ Style blog
                 font-weight: 600;
                 color: #17c18e;
                 font-size: 18px;
+            }
+        }
+
+        .item-challenge {
+            list-style-image: url(../img/ul-style.png);
+            padding-left: 38px;
+            margin-top: 10px;
+            li {
+                width: 50%;
+                margin-bottom: 10px;
+                float: left;
+                padding-right: 40px;
+                &:nth-child(2n) {
+                    padding-right: 0px;
+                }
             }
         }
     }
@@ -802,6 +842,21 @@ Style blog
 
     .learn-item li:nth-child(5) {
         margin: 0px 0px 50px 0px;
+    }
+
+    .learn-content {
+        .learn-title .box-title-right {
+            position: static;
+            display: block;
+            text-align: center !important;
+            p {
+                display: inline-block;
+                margin: 0px 15px 10px;
+            }
+        }
+        .challenge-title p {
+            padding: 0px 30px;
+        }
     }
 }
 
@@ -923,6 +978,29 @@ Style blog
             float: none;
             margin-left: 0px;
             margin: 0px 15px;
+        }
+    }
+
+    .learn-content {
+        .learn-title .box-title-right {
+            position: static;
+            display: block;
+            text-align: center !important;
+            p {
+                display: block;
+                margin: 0px 0px 0px;
+                &:last-child {
+                    margin: 0px 0px 10px;
+                }
+            }
+        }
+        .challenge-title p {
+            padding: 0px 0px;
+        }
+
+        .learn-detail-item .item-challenge li {
+            width: 100%;
+            padding-right: 0px;
         }
     }
 }
