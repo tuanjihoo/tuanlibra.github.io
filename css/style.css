@@ -487,7 +487,7 @@ Style blog
 .blog-content .blog-item h4 a {
   color: #17c18e;
   font-weight: 600;
-  max-width: calc(-210%);
+  max-width: calc(100% - 310px);
   height: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -515,7 +515,7 @@ Style blog
   border-top: 1px solid #ddd;
   margin-bottom: 0px;
   float: left;
-  width: calc(-120%);
+  width: calc(100% - 220px);
 }
 .item-footer li {
   display: inline-block;
@@ -671,10 +671,10 @@ Style blog
     margin-top: 0px;
   }
   .blog-content .blog-item h4 a {
-    max-width: calc(-40%);
+    max-width: calc(100% - 140px);
   }
   .blog-content .blog-item h4 small {
-    width: calc(-40%);
+    width: calc(100% - 140px);
     height: 20px;
     line-height: 20px;
     font-size: 11px;
@@ -691,7 +691,7 @@ Style blog
     margin-bottom: 4px;
   }
   .item-footer {
-    width: calc(-40%);
+    width: calc(100% - 140px);
   }
 }
 @media screen and (max-width: 767px) {
