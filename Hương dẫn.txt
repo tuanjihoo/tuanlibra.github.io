@@ -1,0 +1,35 @@
+Folder
+    css: Thư mục chứa file style
+    js: Thư mục chứa file kịch bản script, thư viện jquery, các thư viện khác
+    lib: Thư mục chứa các thư viện sử dụng
+    img: Thư mục chứa hình ảnh
+
+đường dẫn:
+    /home.html
+       - Trang chủ
+    /home-islogin.html
+       - Trang chủ khi đã đăng nhập
+    /blog.html
+       - Trang danh sách blog
+    /blog-detail.html
+       - Trang chi tiết bài viết
+    /baigiang.html
+       - Trang bài giảng
+    /baitap.html
+       - Trang danh sách các bài tập
+    /baitap-detail.html
+       - Trang chi tiết bài tập
+    /challenge.html
+       - Trang thử thách
+    /giaicuu.html
+       - Trang bài tập thử thách
+    /introduce.html
+       - Trang giới thiệu
+    /learn.html
+       - Trang danh sách các môn học
+    /learn-detail.html
+       - Trang chi tiết một môn học
+    /signin.html
+       - Trang đăng nhập
+    /signup.html
+       - Trang đăng ký

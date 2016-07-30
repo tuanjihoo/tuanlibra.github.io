@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For Do While: Bài giảng</title>
+    <link href="img/logo.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/logo.png">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="javascript:void(0)" class="btn btn-sign-in visible-xs"><i class="fa fa-sign-in"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav block-menu">
+                        <li><a href="learn.html">Học</a></li>
+                        <li><a href="challenge.html">Thử thách</a></li>
+                        <li><a href="javascript:void(0)">Hỏi đáp</a></li>
+                        <li><a href="introduce.html">Giới thiệu</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav  navbar-right hidden-xs">
+                        <li><a href="signin.html" class="btn btn-sign-in"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <!-- End header -->
+    <!-- Content -->
+    <div id="content">
+        <div class="container">
+            <div class="row learn-content page-baigiang">
+                <!-- Title and description -->
+                <div class="col-xs-12 learn-title challenge-title text-center">
+                    <h2>
+                        <span>Vòng lặp For</span>
+                        <a href="javascript:void(0)"><i class="fa fa-comments-o" aria-hidden="true"></i> Discuss</a>
+                    </h2>
+                    <div class="box-title-right text-right">
+                        <p class="point">Tổng điểm giải cứu công chúa: <strong>750</strong></p>
+                        <p>Thứ hạng của bạn: 13/100</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 box-baigiang">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><strong>Bài giảng</strong></div>
+                        <div class="panel-body">
+                            <!-- Nội dụng bài giảng ở đây -->
+                            <!-- Nội dung bài giảng lấy ra từ database sử dụng ckeditor-->
+                            <!-- dữ liệu demo -->
+                            <h1><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg" /> Apollo 11</h1>
+                            <p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="http://en.wikipedia.org/wiki/Neil_Armstrong">Neil Armstrong</a> and <a href="http://en.wikipedia.org/wiki/Buzz_Aldrin">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+                            <p>Armstrong spent about
+                                <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="http://en.wikipedia.org/wiki/Michael_Collins_(astronaut)">Michael Collins</a>, piloted the <a href="http://en.wikipedia.org/wiki/Apollo_Command/Service_Module">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+                            <h2>Broadcasting and <em>quotes</em> <a id="quotes" name="quotes"></a></h2>
+                            <p>Broadcast on live TV to a world-wide audience, Armstrong stepped onto the lunar surface and described the event as:</p>
+                            <blockquote>
+                                <p>One small step for [a] man, one giant leap for mankind.</p>
+                            </blockquote>
+                            <p>Apollo 11 effectively ended the <a href="http://en.wikipedia.org/wiki/Space_Race">Space Race</a> and fulfilled a national goal proposed in 1961 by the late U.S. President <a href="http://en.wikipedia.org/wiki/John_F._Kennedy">John F. Kennedy</a> in a speech before the United States Congress:</p>
+                            <blockquote>
+                                <p>[...] before this decade is out, of landing a man on the Moon and returning him safely to the Earth.</p>
+                            </blockquote>
+                            <h2>Technical details <a id="tech-details" name="tech-details"></a></h2>
+                            <table align="right" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" style="border-collapse:collapse">
+                                <caption><strong>Mission crew</strong></caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Position</th>
+                                        <th scope="col">Astronaut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Commander</td>
+                                        <td>Neil A. Armstrong</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Command Module Pilot</td>
+                                        <td>Michael Collins</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lunar Module Pilot</td>
+                                        <td>Edwin &quot;Buzz&quot; E. Aldrin, Jr.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Launched by a <strong>Saturn V</strong> rocket from <a href="http://en.wikipedia.org/wiki/Kennedy_Space_Center">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="http://en.wikipedia.org/wiki/NASA">NASA</a>&#39;s Apollo program. The Apollo spacecraft had three parts:</p>
+                            <ol>
+                                <li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
+                                <li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
+                                <li><strong>Lunar Module</strong> for landing on the Moon.</li>
+                            </ol>
+                            <p>After being sent to the Moon by the Saturn V&#39;s upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="http://en.wikipedia.org/wiki/Mare_Tranquillitatis">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="http://en.wikipedia.org/wiki/Pacific_Ocean">Pacific Ocean</a> on July 24.</p>
+                            <hr />
+                            <p><small>Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a></small></p>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- paging -->
+                <div class="col-xs-12 paging-bai">
+                    <span>Bài tập</span>
+                    <ul class="paging">
+                        <li class="active" data-toggle="modal" data-target="#modal-baigiang">1</li>
+                        <li data-toggle="modal" data-target="#modal-baigiang">2</li>
+                        <li data-toggle="modal" data-target="#modal-baigiang">3</li>
+                        <li data-toggle="modal" data-target="#modal-baigiang">4</li>
+                        <li data-toggle="modal" data-target="#modal-baigiang">5</li>
+                        <li data-toggle="modal" data-target="#modal-baigiang">6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Popup chạy chương trình -->
+        <div class="modal fade" id="modal-baigiang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            Cấu trúc chương trình C++
+                            <a href="javascript:void(0)" class="pull-right"><i class="fa fa-angle-double-right"></i> Ví dụ tiếp theo</a>
+                        </h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-xs-12 content-exercise">
+                            <!-- Nội dụng chương trình ở đây -->
+                        </div>
+                        <div class="col-xs-12 button-exercise text-right">
+                            <button class="btn btn-default"><i class="fa fa-chevron-circle-left"></i> Chạy bước trước</button>
+                            <button class="btn btn-default"><i class="fa fa-chevron-circle-right"></i> Chạy bước tiếp</button>
+                            <button class="btn btn-default"><i class="fa fa-forward" aria-hidden="true"></i> Chạy hết</button>
+                        </div>
+                        <p class="col-xs-12"> Kết quả chạy chương trình</p>
+                        <div class="col-xs-12 content-result">
+                            <!-- Kết quả chạy chương trình ở đây -->
+                        </div>
+                    </div>
+                    <div class="modal-footer text-left">
+                        <em class="pull-left">90% số người hoàn thành bài tập này (Đạt trên 500 điểm)</em>
+                        <button type="button" class="btn btn-success btn-end pull-right">Kết thúc</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 footer-menu pull-right">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="javascript:void(0)">Cố vấn</a></li>
+                        <li><a href="javascript:void(0)">Liên hệ</a></li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="javascript:void(0)"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="javascript:void(0)"><img src="img/United-Kingdom.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 ">
+                    <p>Copyright © 2016 Fordowhile | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: #17c18e !important;
+  color: #17c18e;
 }
 ul {
   list-style: none;
@@ -166,6 +166,7 @@ ul {
   bottom: 0;
   left: 0;
   color: #979faf;
+  z-index: 1030;
 }
 #footer p {
   font-size: 12px;
@@ -626,7 +627,7 @@ Style blog
 }
 .learn-content .learn-title .box-title-right {
   display: inline-block;
-  right: 0px;
+  right: 15px;
   position: absolute;
   top: 15px;
 }
@@ -649,6 +650,8 @@ Style blog
   background-color: #fff;
   padding: 15px;
   margin-bottom: 20px;
+  float: left;
+  width: 100%;
 }
 .learn-content .learn-detail-item .title-item {
   margin-bottom: 15px;
@@ -660,7 +663,7 @@ Style blog
 }
 .learn-content .learn-detail-item .item-challenge {
   list-style-image: url(../img/ul-style.png);
-  padding-left: 38px;
+  padding-left: 23px;
   margin-top: 10px;
 }
 .learn-content .learn-detail-item .item-challenge li {
@@ -673,6 +676,205 @@ Style blog
   padding-right: 0px;
 }
 /*End learn detail*/
+/* Giai cuu*/
+.page-giaicuu {
+  margin-bottom: 50px;
+}
+.page-giaicuu .box {
+  margin-bottom: 30px;
+}
+.page-giaicuu .box .item-block {
+  border-radius: 4px;
+  padding: 30px;
+  background-color: #fff;
+}
+.page-giaicuu .box .item-block .title-item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.page-giaicuu .box .item-block .title-item a {
+  font-size: 22px;
+  color: #17c18e;
+  font-weight: 500;
+}
+.page-giaicuu .box .item-block .block-list li {
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.page-giaicuu .box .item-block .block-list li strong {
+  font-style: normal;
+}
+.page-giaicuu .box .item-block.active {
+  background-color: #17c18e;
+}
+.page-giaicuu .box .item-block.active .title-item a {
+  color: #fff;
+}
+.page-giaicuu .box .item-block.active .title-item a:hover {
+  color: #fff;
+}
+.page-giaicuu .box .item-block.active .block-list li {
+  color: #fff;
+}
+.btn-end {
+  background-color: #17c18e;
+  border-color: #17c18e;
+  padding: 5px 20px;
+}
+/* End Giai cuu*/
+/* Bai giang*/
+.page-baigiang .box-baigiang .panel-heading {
+  font-size: 18px;
+}
+.page-baigiang .box-baigiang .panel-heading strong {
+  font-weight: 500;
+}
+.page-baigiang .box-baigiang .panel-body {
+  max-height: 500px;
+  overflow: auto;
+}
+.page-baigiang .paging-bai span {
+  width: 100px;
+  display: inline-block;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+}
+.page-baigiang .paging-bai .paging {
+  width: calc(100% - 100px);
+  float: left;
+  text-align: left;
+}
+.page-baigiang .paging-bai .paging li {
+  display: inline-block;
+  margin: 0px 2px;
+  background-color: #fff;
+  padding: 2px 9px;
+  font-weight: 600;
+  cursor: pointer;
+  font-weight: 400;
+}
+.page-baigiang .paging-bai .paging li.active,
+.page-baigiang .paging-bai .paging li:hover {
+  background-color: #999;
+}
+#modal-baigiang .modal-header .close {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #000;
+  margin-top: 2px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+#modal-baigiang .modal-header .modal-title a {
+  margin-right: 15px;
+  font-size: 13px;
+  color: #17c18e;
+  line-height: 25px;
+}
+#modal-baigiang .modal-body .content-exercise {
+  height: 250px;
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+}
+#modal-baigiang .modal-body .button-exercise {
+  margin: 15px 0px;
+}
+#modal-baigiang .modal-body p {
+  background-color: #ddd;
+  height: 40px;
+  line-height: 40px;
+}
+#modal-baigiang .modal-body .content-result {
+  height: 100px;
+  overflow: auto;
+}
+#modal-baigiang .modal-footer em {
+  line-height: 33px;
+  color: #17c18e;
+}
+/* End bai giang*/
+.fixed {
+  position: fixed;
+  top: 75px;
+  width: 100% !important;
+  height: calc(100% - 105px) !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1002;
+  background-color: #fff;
+}
+/* Bài tập*/
+.page-baitap .panel-heading strong {
+  font-weight: 400;
+  font-size: 18px;
+}
+.page-baitap .panel-heading a {
+  color: #999;
+}
+.page-baitap .paging-bai span {
+  display: inline-block;
+  float: left;
+  line-height: 26px;
+  margin-right: 5px;
+}
+.page-baitap .paging-bai .paging {
+  text-align: left;
+}
+.page-baitap .paging-bai .paging li {
+  padding: 2px 8px;
+  margin-right: 0px;
+  margin-left: 2px;
+  font-weight: 400;
+}
+.page-baitap .paging-bai .paging li.active,
+.page-baitap .paging-bai .paging li:hover {
+  background-color: #999;
+}
+.page-baitap .program .panel-body {
+  height: 250px;
+  overflow: auto;
+  padding: 0px;
+}
+.page-baitap .result .panel-body {
+  height: 150px;
+  overflow: auto;
+}
+.page-baitap .title .panel-body {
+  height: 500px;
+  overflow: auto;
+}
+.page-baitap .title .panel-body ul li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+.page-baitap .title .panel-body ul li a {
+  color: #555;
+}
+.page-baitap .title .panel-body ul li.active a,
+.page-baitap .title .panel-body ul li a:hover {
+  color: #17c18e;
+}
+.page-baitap .title .panel-body .title {
+  font-weight: 600;
+}
+.page-baitap .panel-footer {
+  text-align: right;
+  background-color: #fff;
+}
+.page-baitap .footer-program em {
+  color: #17c18e;
+  font-size: 13px;
+}
+.error {
+  color: red !important;
+}
+/* End bài tập*/
 @media screen and (max-width: 1199px) {
   .learn-item li span {
     height: 150px;
@@ -824,6 +1026,12 @@ Style blog
   .learn-content .learn-detail-item .item-challenge li {
     width: 100%;
     padding-right: 0px;
+  }
+  .page-giaicuu {
+    margin-bottom: 100px;
+  }
+  .page-giaicuu .box-end {
+    text-align: center !important;
   }
 }
 @media screen and (max-width: 480px) {
